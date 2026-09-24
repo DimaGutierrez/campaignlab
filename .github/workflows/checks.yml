@@ -1,0 +1,34 @@
+name: Checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-dev.txt
+      - run: ruff check .
+      - run: pytest -q
+      - run: node --check web/app.js
+  docker:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker compose up -d --build
+        env:
+          ADMIN_KEY: ci-only-admin-key-not-a-production-secret
+          INGEST_KEY: ci-only-ingest-key-not-a-production-secret
+      - run: |
+          for i in $(seq 1 30); do
+            if curl --fail http://127.0.0.1:8010/health; then exit 0; fi
+            sleep 2
+          done
+          docker compose logs
+          exit 1
+        env:
+          ADMIN_KEY: ci-only-admin-key-not-a-production-secret
+          INGEST_KEY: ci-only-ingest-key-not-a-production-secret
