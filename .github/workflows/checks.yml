@@ -14,6 +14,8 @@ jobs:
       - run: ruff check .
       - run: pytest -q
       - run: node --check web/app.js
+      - run: node --test tests/demo-model.test.mjs
+      - run: python scripts/build_demo.py
   docker:
     runs-on: ubuntu-24.04
     steps:
