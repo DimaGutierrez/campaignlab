@@ -1,12 +1,22 @@
 # CampaignLab
 
-**[Probar demo online / Try the live demo](https://campaignlab-demo.pages.dev/)** — Datos ficticios y simulación en el navegador; el backend real está en este repositorio.
+**[Abrir la demo online →](https://campaignlab-demo.pages.dev/)**
+
+https://campaignlab-demo.pages.dev/
+
+Sin instalación ni registro. Alojada en Cloudflare Pages con datos ficticios y simulación en el navegador. No se conecta a la computadora del autor.
 
 ![Marketing, con evidencia](assets/hero-v2.png)
 
 Un proyecto fullstack que conecta marketing y backend: creá enlaces UTM, registrá conversiones y compará campañas con métricas explícitas.
 
-## Qué podés hacer
+## Probá la demo pública
+
+Creá una campaña de ejemplo, copiá sus UTM, simulá un clic y una conversión, y reenviá el mismo evento para comprobar que no se duplican los ingresos. También podés exportar CSV y reiniciar los datos. Tus cambios se guardan únicamente en tu navegador.
+
+La demo no registra visitas reales ni utiliza la API de Python. [Cómo funciona la demo](docs/public-demo.md).
+
+## Qué incluye el backend del repositorio
 
 1. Crear una campaña con destino HTTPS, source, medium, campaign e inversión manual en USD.
 2. Compartir su enlace de seguimiento. Cada visita registra un clic y entrega un identificador al destino.

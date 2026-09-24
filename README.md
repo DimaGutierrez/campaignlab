@@ -1,6 +1,10 @@
 # CampaignLab
 
-**[Probar demo online / Try the live demo](https://campaignlab-demo.pages.dev/)** — Datos ficticios y simulación en el navegador; el backend real está en este repositorio.
+**[Open the live demo →](https://campaignlab-demo.pages.dev/)**
+
+https://campaignlab-demo.pages.dev/
+
+No installation or account required. Hosted on Cloudflare Pages, with fictional data and browser-only simulation. Campaigns and simulated events stay in your browser. The full Python backend is available in this repository.
 
 ![CampaignLab — marketing with evidence](assets/hero-v2.png)
 
@@ -21,26 +25,17 @@ A dashboard can look convincing while counting the wrong thing. CampaignLab make
 - Separate admin and ingestion keys; no third-party scripts, tracking cookies or IP storage in the application database.
 - Fictional demo data, tests, Docker configuration and community documentation.
 
-## Run locally
+## Try it online
 
-```sh
-python -m venv .venv
-# Activate the environment; see docs/setup.md for your operating system.
-pip install -r requirements.txt
-```
+Open **[CampaignLab](https://campaignlab-demo.pages.dev/)** to create a sample campaign, copy UTM links, simulate a click and conversion, retry the same event without duplicating revenue, or export demo data.
 
-Set two different random environment variables, `ADMIN_KEY` and `INGEST_KEY`, each at least 24 characters. Then:
+The public demo does not collect real clicks or call the Python API. See [public demo details](docs/public-demo.md).
 
-```sh
-python seed.py --demo  # optional; only accepts an empty database
-uvicorn app:app --host 127.0.0.1 --port 8010 --no-access-log
-```
+## Run the fullstack application yourself
 
-Open **http://127.0.0.1:8010** and enter your admin key. Demo numbers are synthetic and must not be presented as business results. The native launcher does not automatically load `.env`.
+For the real tracking API and persistent SQLite database, follow the [local installation guide](docs/setup.md). It includes native Python and Docker instructions, private key configuration and the local development address.
 
-For Docker, copy `.env.example` to `.env`, replace both keys, then `docker compose up --build`. The default port binds only to loopback. See [setup](docs/setup.md) before hosting publicly.
-
-## Conversion contract
+## Backend conversion contract
 
 The destination receives `cl_click` alongside the UTM parameters. Preserve that value in your own application and submit from your backend, never by exposing the ingestion key in frontend code:
 
