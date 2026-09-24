@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    ports:
+      - "127.0.0.1:8010:8010"
+    environment:
+      ADMIN_KEY: ${ADMIN_KEY:?Set ADMIN_KEY in .env}
+      INGEST_KEY: ${INGEST_KEY:?Set INGEST_KEY in .env}
+      PUBLIC_URL: ${PUBLIC_URL:-http://127.0.0.1:8010}
+      DATABASE_PATH: /app/data/campaignlab.db
+    volumes:
+      - campaignlab-data:/app/data
+    restart: unless-stopped
+volumes:
+  campaignlab-data:
