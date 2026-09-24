@@ -1,5 +1,7 @@
 # CampaignLab
 
+**[Probar demo online / Try the live demo](https://campaignlab-demo.pages.dev/)** — Datos ficticios y simulación en el navegador; el backend real está en este repositorio.
+
 ![CampaignLab — marketing with evidence](assets/hero-v2.png)
 
 **Create UTM links, record conversions and explain your campaign metrics.** A small fullstack marketing workspace built with FastAPI, SQLite and browser-native JavaScript.

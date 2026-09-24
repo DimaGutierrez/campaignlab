@@ -1,5 +1,7 @@
 # CampaignLab
 
+**[Probar demo online / Try the live demo](https://campaignlab-demo.pages.dev/)** — Datos ficticios y simulación en el navegador; el backend real está en este repositorio.
+
 ![Marketing, con evidencia](assets/hero-v2.png)
 
 Un proyecto fullstack que conecta marketing y backend: creá enlaces UTM, registrá conversiones y compará campañas con métricas explícitas.
