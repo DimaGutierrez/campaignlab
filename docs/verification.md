@@ -6,4 +6,4 @@ JavaScript syntax check passed. Python lint passed. Browser verification complet
 
 One upstream Starlette TestClient deprecation warning is emitted by the installed HTTP test adapter. It does not fail these tests.
 
-Docker was not run locally (Docker is unavailable). A Docker smoke workflow is prepared for GitHub; it has not executed remotely because this project is not yet published. These tests are not a production security review, load test or proof of marketing outcomes.
+Docker was not run locally (Docker is unavailable). GitHub Actions passed both the Python/JavaScript checks and the Docker build/startup health check on 2026-09-24: [verified run](https://github.com/DimaGutierrez/campaignlab/actions/runs/36004768322), commit 688a094f9622200d8a5a0b30dab3f7717dbff60b. These tests are not a production security review, load test or proof of marketing outcomes.
