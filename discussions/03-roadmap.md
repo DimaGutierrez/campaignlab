@@ -1,5 +1,7 @@
 # Cost imports, funnel events or attribution models: what comes next?
 
+**[Open the public browser demo →](https://diegogutierrez.pages.dev/campaignlab/)** — fictional campaigns, simulated clicks and conversions, no installation or backend connection. The technical guides below describe the complete local backend. [Public demo scope](https://github.com/DimaGutierrez/campaignlab/blob/main/docs/public-demo.md).
+
 ![Cost imports, funnel events or attribution models: what comes next?](https://github.com/DimaGutierrez/campaignlab/raw/refs/heads/main/assets/discussion-roadmap-v2.png)
 
 The first version has manual spend, click links and backend conversion ingestion. These next steps are proposals, not released integrations.
