@@ -1,8 +1,8 @@
 # CampaignLab
 
-**[Open the live demo →](https://campaignlab-demo.pages.dev/)**
+**[Open the live demo →](https://diegogutierrez.pages.dev/campaignlab/)**
 
-https://campaignlab-demo.pages.dev/
+https://diegogutierrez.pages.dev/campaignlab/
 
 No installation or account required. Hosted on Cloudflare Pages, with fictional data and browser-only simulation. Campaigns and simulated events stay in your browser. The full Python backend is available in this repository.
 
@@ -27,7 +27,7 @@ A dashboard can look convincing while counting the wrong thing. CampaignLab make
 
 ## Try it online
 
-Open **[CampaignLab](https://campaignlab-demo.pages.dev/)** to create a sample campaign, copy UTM links, simulate a click and conversion, retry the same event without duplicating revenue, or export demo data.
+Open **[CampaignLab](https://diegogutierrez.pages.dev/campaignlab/)** to create a sample campaign, copy UTM links, simulate a click and conversion, retry the same event without duplicating revenue, or export demo data.
 
 The public demo does not collect real clicks or call the Python API. See [public demo details](docs/public-demo.md).
 

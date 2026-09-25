@@ -1,8 +1,8 @@
 # CampaignLab
 
-**[Abrir la demo online →](https://campaignlab-demo.pages.dev/)**
+**[Abrir la demo online →](https://diegogutierrez.pages.dev/campaignlab/)**
 
-https://campaignlab-demo.pages.dev/
+https://diegogutierrez.pages.dev/campaignlab/
 
 Sin instalación ni registro. Alojada en Cloudflare Pages con datos ficticios y simulación en el navegador. No se conecta a la computadora del autor.
 
