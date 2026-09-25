@@ -1,5 +1,7 @@
 # API reference
 
+**[Open the public browser demo →](https://diegogutierrez.pages.dev/campaignlab/)** — fictional campaigns, simulated clicks and conversions, no installation or backend connection. The technical guides below describe the complete local backend. [Public demo scope](https://github.com/DimaGutierrez/campaignlab/blob/main/docs/public-demo.md).
+
 | Route | Credential | Purpose |
 | --- | --- | --- |
 | GET /health | None | Database readiness |

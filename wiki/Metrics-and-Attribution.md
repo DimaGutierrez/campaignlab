@@ -1,5 +1,7 @@
 # Metric definitions and boundaries
 
+**[Open the public browser demo →](https://diegogutierrez.pages.dev/campaignlab/)** — fictional campaigns, simulated clicks and conversions, no installation or backend connection. The technical guides below describe the complete local backend. [Public demo scope](https://github.com/DimaGutierrez/campaignlab/blob/main/docs/public-demo.md).
+
 | Metric | Definition |
 | --- | --- |
 | Clicks | Successful GET requests to a campaign redirect, including repeat visits and possible bots |

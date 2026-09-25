@@ -8,4 +8,4 @@ Marketing tools with explicit backend guarantees. Start with the fictional local
 - [API Reference](API-Reference)
 - [Contributing](Contributing)
 
-[Try the public browser-only demo](https://campaignlab-demo.pages.dev/) — fictional data, simulated events, no backend connection.
+[Try the public browser-only demo](https://diegogutierrez.pages.dev/campaignlab/) — fictional data, simulated events, no backend connection.

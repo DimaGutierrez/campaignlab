@@ -1,5 +1,7 @@
 # Setup
 
+**[Open the public browser demo →](https://diegogutierrez.pages.dev/campaignlab/)** — fictional campaigns, simulated clicks and conversions, no installation or backend connection. The technical guides below describe the complete local backend. [Public demo scope](https://github.com/DimaGutierrez/campaignlab/blob/main/docs/public-demo.md).
+
 Requires Python 3.12+. No Node build or external database is required. Node is only used for optional JavaScript syntax checking.
 
 ## Native: PowerShell
