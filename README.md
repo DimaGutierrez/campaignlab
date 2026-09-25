@@ -1,12 +1,10 @@
 # CampaignLab
-
+![CampaignLab — marketing with evidence](assets/hero-v2.png)
 **[Open the live demo →](https://diegogutierrez.pages.dev/campaignlab/)**
 
 https://diegogutierrez.pages.dev/campaignlab/
 
 No installation or account required. Hosted on Cloudflare Pages, with fictional data and browser-only simulation. Campaigns and simulated events stay in your browser. The full Python backend is available in this repository.
-
-![CampaignLab — marketing with evidence](assets/hero-v2.png)
 
 **Create UTM links, record conversions and explain your campaign metrics.** A small fullstack marketing workspace built with FastAPI, SQLite and browser-native JavaScript.
 
